@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Dashboard</title>
+  <link rel="stylesheet" href="CSS/dasboard.css">
+  <link rel="stylesheet" href="CSS/Ruang_tani.css">
+  <link rel="stylesheet" href="CSS/home.css">
+  <link rel="stylesheet" href="CSS/data_pertanian.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/rekap.css">
+  <!-- <script src="JS/script.js"></script> -->
+</head>
+<body>
+
+  <div class="sidenav">
+    <div class="logo">
+      <img src="CSS/IMG/logo.png" alt="logo">
+      <h1>RENI</h1>
+    </div>
+    <hr>
+    <a class="navbar active" href="#" onclick="openFitur(event, 'home')" id="defaultOpen">Home</a>
+    <a class="navbar" onclick="openFitur(event, 'profil')">Profil</a>
+    <a class="navbar" onclick="openFitur(event, 'data-petani')">Data Petani</a>
+    <a class="navbar" onclick="openFitur(event, 'ruang-tani')">Ruang Tani</a>
+    <a class="navbar" onclick="openFitur(event, 'rekap')">Rekap Data Pertanian</a>
+    <hr>
+    <a class="logout" href="Login.html" onclick="return confirm('Anda yakin ingin keluar?')">Logout</a>
+  </div>
+  
+  <!-- Halaman Home -->
+  <div class="main" id="home" style="display: block;">
+    <div class="isi">
+      <h2>Selamat Datang Kembali Username</h2>
+      <img src="img/Kebun.jpeg" alt="gambar" loading="lazy">
+      <div class="def-reni">
+        <img src="CSS/IMG/logo.png" alt="Logo" loading="lazy">
+        <p>Reni (Rekap Tani) adalah sebuah platform web yang dirancang 
+          khusus untuk membantu para petani dalam mencatat dan menganalisis semua 
+          kegiatan yang terkait dengan pertanian. Tujuan utama dari Reni adalah 
+          memberikan kemudahan bagi petani dalam melakukan pencatatan aktivitas 
+          pertanian mereka serta menyediakan referensi dan analisis yang berguna 
+          untuk meningkatkan produktivitas dan efisiensi pertanian.</p>
+      </div>
+
+      <div class="fungsi">
+        <ol>
+          <b><p>Berikut adalah beberapa fitur dan fungsi utama dari Reni:</p></b>
+
+          <b><li>Pencatatan Kegiatan Pertanian</li></b>
+          <p>Reni memungkinkan para petani untuk mencatat semua kegiatan yang terkait dengan pertanian mereka, mulai dari penanaman, pemeliharaan, hingga panen. Hal ini membantu petani untuk memiliki catatan yang lengkap dan terperinci tentang setiap langkah yang mereka ambil dalam proses pertanian.</p>
+          
+          <b><li>Ruang Tani</li></b>
+          <p>Reni memungkinkan petani untuk mencari berbagai referensi mengenai tanaman dan rekomendasi untuk pertanian atau perkebunan di lokasi yang telah dipilih.</p>
+          
+          <b><li>Informasi Lokasi Pertanian</li></b>
+          <p>Reni memiliki fitur yang memungkinkan untuk menampilkan semua informasi terkait lokasi pertanian, mencakup aspek seperti ketersediaan air, kondisi tanah, dan suhu lingkungan.</p>
+        </ol>
+        <img src="img/Perkbunan 2.jpeg" alt="Logo" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Halaman Profil -->
+  <div class="main" id="profil" style="display: none;">
+
+    <div class="isi-profil">
+      <button class="edit-profil">Edit Profil</button>
+      <img src="img/Pin on wallpapers.jpeg" alt="foto-profil" class="foto profil" loading="lazy">
+      <table class="data">
+        <tr>
+          <th>Username</th>
+          <th class="titik-koma">:</th>
+          <td>Username</td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <th class="titik-koma">:</th>
+          <td>useremail@gmail.com</td>
+        </tr>
+        <tr>
+          <th>Date Of Brith</th>
+          <th class="titik-koma">:</th>
+          <td>01-01-2000</td>
+        <tr>
+          <th>Phone</th>
+          <th class="titik-koma" >:</th>
+          <td>081234567890</td>
+        </tr>
+        <tr>
+          <th>Address</th>
+          <th class="titik-koma">:</th>
+          <td>Jl. Kebon Jeruk No. 1</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="informasi-pertanian">
+        <h2>Informasi Pertanian</h2>
+        <table class="info">
+          <tr>
+            <th>Luas Lahan</th>
+            <th>Sistem Pertanian</th>
+            <th>Pengalaman</th>
+          </tr>
+          <tr>
+            <td>1000 m2</td>
+            <td>Komersial</td>
+            <td>5 Tahun</td>
+        </table>
+    </div>
+    
+    <div class="info-lahan">
+      <h2>Informasi Detail Lokasi Pertanian</h2>
+      <div class="pilihan-info">
+        <a href="halaman_fungsi/Tanah.html">
+          <div class="pilihan">
+            <img src="img/Tanah.png" alt="gambar-tanah" id="Tanah" loading="lazy">
+            <label for="Tanah">Tanah</label>
+          </div>
+        </a>
+  
+        <a href="halaman_fungsi/Air.html">
+          <div class="pilihan">
+            <img src="img/Air.png" alt="gambar-air" id="Air" loading="lazy">
+            <label for="Air">Air</label>
+          </div>
+        </a>
+  
+        <a href="halaman_fungsi/Udara.html">
+          <div class="pilihan">
+            <img src="img/Suhu.png" alt="gambar-udara" id="Udara" loading="lazy">
+            <label for="Udara">Udara</label>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="info-tanaman">
+      <h2>Informasi Tanaman</h2>
+      <div class="pilihan-tanaman">
+        <a href="#">
+          <div class="tanaman">
+            <img src="img/Pangan.png" alt="pangan" loading="lazy">
+            <label for="Pangan">Pangan</label>
+          </div>
+        </a>
+  
+        <a href="#">
+          <div class="tanaman">
+            <img src="img/Perkebunan.png" alt="Perkebunan" loading="lazy">
+            <label for="Perkebunan">Perkebunan</label>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Halaman Data Pertanian -->
+  <div class="main" id="data-petani" style="display: none;">
+    <div class="data-pangan">
+      <h3>Catatan Pangan</h3>
+      <table class="tabel-data">
+        <tr>
+          <th class="tanggal">Tanggal</th>
+          <th>Nama Tanaman</th>
+          <th>Luas Penanaman</th>
+          <th>Tanggal Panen</th>
+          <th>Hasil</th>
+        </tr>
+        <tr>
+          <td>01-01-2021</td>
+          <td>Padi</td>
+          <td>100 m2</td>
+          <td>01-03-2021</td>
+          <td>100 kg</td>
+        </tr>
+
+        <tr>
+          <td>01-01-2021</td>
+          <td>Jagung</td>
+          <td>100 m2</td>
+          <td>01-03-2021</td>
+          <td>100 kg</td>
+        </tr>
+
+        <tr>
+          <td>01-01-2021</td>
+          <td>Kacang Hijau</td>
+          <td>100 m2</td>
+          <td>01-03-2021</td>
+          <td>100 kg</td>
+      </table>
+    </div>
+
+    <div class="data-perkebunan">
+      <h3>Catatan Perkebunan</h3>
+      <table class="tabel-data">
+        <tr>
+          <th>Tanggal</th>
+          <th>Nama Tanaman</th>
+          <th>Luas Penanaman</th>
+          <th>Tanggal Panen</th>
+          <th>Hasil</th>
+        </tr>
+        <tr>
+          <td>01-01-2021</td>
+          <td>Padi</td>
+          <td>100 m2</td>
+          <td>01-03-2021</td>
+          <td>100 kg</td>
+        </tr>
+
+        <tr>
+          <td>01-01-2021</td>
+          <td>Jagung</td>
+          <td>100 m2</td>
+          <td>01-03-2021</td>
+          <td>100 kg</td>
+        </tr>
+
+        <tr>
+          <td>01-01-2021</td>
+          <td>Kacang Hijau</td>
+          <td>100 m2</td>
+          <td>01-03-2021</td>
+          <td>100 kg</td>
+      </table>
+    </div>
+  </div>
+
+  <div class="main" id="ruang-tani" style="display: none;">
+    <div class="def-search">
+      <img src="img/Kebun.jpeg" alt="" class="latarBelakang" loading="lazy">
+      <div class="isi-tuang-tani">
+        <div class="atas">
+          <h2>Ruang Tani</h2>
+          <input type="search" id="search-petani" placeholder="Search......">
+        </div>
+
+        <div class="penjelasan">
+          <p>Ruang Tani adalah fitur yang memungkinkan petani untuk mencari berbagai referensi mengenai tanaman dan rekomendasi untuk pertanian atau perkebunan di lokasi yang telah dipilih. Dengan Ruang Tani, petani dapat memperoleh informasi yang berguna untuk meningkatkan produktivitas dan efisiensi pertanian mereka.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="main" id="rekap" style="display: none;">
+    <h2>Rekap Data Pertanian</h2>
+    <form action="">
+      <label for="tanggal">Pilih Tanggal Tanam</label>
+      <input type="date" id="tanggal" name="tanggal">
+
+      <label for="jenis">Jenis Tanaman</label>
+      <input type="text" id="jenis" name="jenis">
+
+      <label for="luas">Luas Lahan</label>
+      <input type="text" id="luas" name="luas">
+
+      <label for="hasil">Tanggal Panen</label>
+      <input type="date" id="panen" name="panen">
+
+      <label for="hasil">Hasil</label>
+      <input type="text" id="hasil" name="hasil">
+
+    <button type="submit" name="submit" class="btn_simpan">Simpan Data</button>    
+    </form>
+
+  </div>
+
+  <!-- Java Script -->
+  <script src="JS/prosesData.js"></script>
+  <script src="JS/proses_inputData.js"></script>
+  <script src="JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+/* General Styles */
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: #F3F3F3;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sidebar Styles */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #4CAF50;
+  overflow-x: hidden;
+  padding-top: 20px;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.sidenav a {
+  padding: 10px 8px 10px 70px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-style: italic;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: all 0.3s;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.sidenav a:hover {
+  background-color: white;
+  color: #4CAF50;
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidenav a.active {
+  background-color: white;
+  color: #4CAF50;
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content Styles */
+.main {
+  margin-left: 270px;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-size: 28px;
+  padding: 0px 10px;
+}
+
+/* Other Styles */
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+}
+
+.logo {
+  height: 80px;
+  gap: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  color: #4CAF50;
+  font-style: italic;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 10px ;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+hr {
+  border: 1px solid #FFFFFF;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.logout {
+  margin-top: 0;
+}
+
+/* Additional Styles for Specific Elements */
+.isi-profil {
+  padding: 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.edit-profil {
+  position: absolute; /* Tambahkan */
+  top: 10px; /* Tambahkan */
+  right: 10px; /* Tambahkan */
+  padding: 10px 20px; /* Tambahkan */
+  background-color: #4CAF50; /* Tambahkan */
+  color: white; /* Tambahkan */
+  border: none; /* Tambahkan */
+  border-radius: 5px; /* Tambahkan */
+  cursor: pointer; /* Tambahkan */
+  font-size: 16px; /* Tambahkan */
+  transition: background-color 0.3s; /* Tambahkan */
+}
+
+.edit-profil:hover {
+  background-color: #008033; /* Tambahkan */
+}
+
+.isi-profil img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 100%;
+}
+
+.isi-profil .data {
+  font-size: 20px;
+  text-align: left;
+}
+
+.data tr th {
+  padding-right: 20px;
+  padding-bottom: 0;
+  font-size: 20px;
+}
+
+
+.informasi-pertanian,
+.info-lahan,
+.info-tanaman {
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pilihan-info,
+.pilihan-tanaman {
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.pilihan-info a,
+.pilihan-tanaman a {
+  text-decoration: none;
+  color: black;
+}
+
+.pilihan-info .pilihan,
+.pilihan-tanaman .tanaman {
+  padding: 20px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pilihan-info a:hover,
+.pilihan-tanaman a:hover {
+  background-color: #dadada;
+  border-radius: 10px;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.pilihan-info img:hover,
+.pilihan-tanaman img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.pilihan-info img,
+.pilihan-tanaman img {
+  width: 125px;
+  height: 125px;
+}
+
+.pilihan-info .pilihan,
+.pilihan-tanaman .tanaman {
+  width: 200px;
+  height: 200px;
+}
+
+.info-pertanian h2,
+.info-lahan h2,
+.info-tanaman h2 {
+  margin-bottom: 10px;
+  font-style: italic;
+  color: #4CAF50;
+}
+
+.informasi-pertanian table,
+.info-lahan table,
+.info-tanaman table {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.informasi-pertanian table th,
+.info-lahan table th,
+.info-tanaman table th {
+  padding-right: 50px;
+  padding-left: 50px;
+  text-align: center;
+  font-style: italic;
+  font-size: 25px;
+  color: #4CAF50;
+}
+
+.informasi-pertanian table td,
+.info-lahan table td,
+.info-tanaman table td {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidenav {
+    width: 150px;
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    padding: 10px 8px;
+    margin-right: 0;
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .main {
+    margin-left: 170px;
+    margin-right: 10px;
+  }
+
+  .logo img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .logo {
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+
+  .isi-profil img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+  }
+
+  .isi-profil .data {
+    font-size: 16px;
+  }
+}

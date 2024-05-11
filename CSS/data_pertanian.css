@@ -1,0 +1,57 @@
+.data-pangan {
+    margin: 20px;
+    padding: 0 30px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data-pangan table {
+    width: 100%;
+}
+
+.data-pangan table th {
+    background-color: #4CAF50;
+    color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.data-pangan table td, th {
+    margin-top: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.data-perkebunan {
+    margin: 20px;
+    padding: 0 30px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data-perkebunan table {
+    width: 100%;
+}
+
+.data-perkebunan table th {
+    background-color: #4CAF50;
+    color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.data-perkebunan table td, th {
+    margin-top: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 15px;
+}

@@ -1,0 +1,75 @@
+#ruang-tani {
+    position: relative;
+}
+
+.def-search {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    overflow: hidden; /* Hindari gambar melebihi batas div */
+}
+
+.def-search img {
+    width: 100%;
+    height: 100%; /* Untuk memastikan gambar mengisi tinggi div */
+    border-radius: 10px;
+    filter: brightness(65%);
+    object-fit: cover; /* Gambar akan memenuhi area dengan memotong bagian yang berlebihan */
+}
+
+.atas {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 1; 
+    border-radius: 10px;
+}
+
+.atas h2 {
+    color: white;
+}
+
+.isi-ruang-tani {
+    display: flex;
+    flex-direction: column;
+}
+
+.penjelasan {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%; 
+    left: 31%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 1; 
+    border-radius: 10px;
+}
+
+.penjelasan p {
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    width: 60%;
+}
+
+.penjelasan h3 {
+    margin-bottom: 10px;
+}
+
+.atas input {
+    padding: 8px 25px; 
+    border-radius: 5px;
+    border: none;
+}

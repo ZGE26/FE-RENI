@@ -1,0 +1,53 @@
+.isi {
+    margin: 20px;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.isi .def-reni {
+    display: flex;
+    align-items: center;
+}
+
+.isi .def-reni img {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.isi .def-reni p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.isi img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.isi .fungsi {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.isi .fungsi ol{
+    font-size: 20px;
+    text-align: left;
+    margin: 20px;
+}
+
+.isi .fungsi ol li {
+    color: #4CAF50;
+}
+
+.isi .fungsi img {
+    width: 300px;
+    margin-right: 20px;
+}
