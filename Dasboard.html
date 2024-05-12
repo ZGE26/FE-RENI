@@ -252,29 +252,33 @@
 
   <div class="main" id="rekap" style="display: none;">
     <h2>Rekap Data Pertanian</h2>
-    <form action="">
+    <form id="form_rekap">
       <label for="tanggal">Pilih Tanggal Tanam</label>
       <input type="date" id="tanggal" name="tanggal">
 
       <label for="jenis">Jenis Tanaman</label>
-      <input type="text" id="jenis" name="jenis">
+      <select id="jenis" name="jenis">
+        <option value="1">Padi</option>
+        <option value="2">Jagung</option>
+        <option value="3">Kedelai</option>
+      </select>
 
       <label for="luas">Luas Lahan</label>
       <input type="text" id="luas" name="luas">
 
-      <label for="hasil">Tanggal Panen</label>
+      <label for="panen">Tanggal Panen</label>
       <input type="date" id="panen" name="panen">
 
       <label for="hasil">Hasil</label>
       <input type="text" id="hasil" name="hasil">
 
-    <button type="submit" name="submit" class="btn_simpan" id="simpan">Simpan Data</button>    
+      <button type="button" class="btn_simpan" id="simpan">Simpan Data</button> <!-- Ubah type menjadi "button" agar tidak langsung mengirimkan formulir -->
     </form>
 
   </div>
 
   <!-- Java Script -->
-  <script src="JS/prosesData.js"></script>
+  <!-- <script src="JS/prosesData.js"></script> -->
   <script src="JS/proses_inputData.js"></script>
   <script src="JS/script.js"></script>
 </body>

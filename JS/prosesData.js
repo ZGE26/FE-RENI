@@ -1,6 +1,6 @@
 // Function to fetch and display data
 function fetchData(dataType) {
-    const url = "your_api_url"; 
+    const url = "/panen"; 
     const dataElement = document.getElementById("data-petani");
     const targetSection = dataElement.querySelector(`.data-${dataType}`);
   
