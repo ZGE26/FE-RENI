@@ -164,42 +164,7 @@
   <div class="main" id="data-petani" style="display: none;">
     <div class="data-pangan">
       <h3>Catatan Pangan</h3>
-      <table class="tabel-data">
-        <tr>
-          <th class="tanggal">Tanggal</th>
-          <th>Nama Tanaman</th>
-          <th>Luas Penanaman</th>
-          <th>Tanggal Panen</th>
-          <th>Hasil</th>
-        </tr>
-        <tr>
-          <td>01-01-2021</td>
-          <td>Padi</td>
-          <td>100 m2</td>
-          <td>01-03-2021</td>
-          <td>100 kg</td>
-        </tr>
-
-        <tr>
-          <td>01-01-2021</td>
-          <td>Jagung</td>
-          <td>100 m2</td>
-          <td>01-03-2021</td>
-          <td>100 kg</td>
-        </tr>
-
-        <tr>
-          <td>01-01-2021</td>
-          <td>Kacang Hijau</td>
-          <td>100 m2</td>
-          <td>01-03-2021</td>
-          <td>100 kg</td>
-      </table>
-    </div>
-
-    <div class="data-perkebunan">
-      <h3>Catatan Perkebunan</h3>
-      <table class="tabel-data">
+      <table class="tabel-data" id="tabel-data">
         <tr>
           <th>Tanggal</th>
           <th>Nama Tanaman</th>
@@ -207,28 +172,6 @@
           <th>Tanggal Panen</th>
           <th>Hasil</th>
         </tr>
-        <tr>
-          <td>01-01-2021</td>
-          <td>Padi</td>
-          <td>100 m2</td>
-          <td>01-03-2021</td>
-          <td>100 kg</td>
-        </tr>
-
-        <tr>
-          <td>01-01-2021</td>
-          <td>Jagung</td>
-          <td>100 m2</td>
-          <td>01-03-2021</td>
-          <td>100 kg</td>
-        </tr>
-
-        <tr>
-          <td>01-01-2021</td>
-          <td>Kacang Hijau</td>
-          <td>100 m2</td>
-          <td>01-03-2021</td>
-          <td>100 kg</td>
       </table>
     </div>
   </div>
@@ -254,23 +197,23 @@
     <h2>Rekap Data Pertanian</h2>
     <form id="form_rekap">
       <label for="tanggal">Pilih Tanggal Tanam</label>
-      <input type="date" id="tanggal" name="tanggal">
+      <input type="date" id="tanggal" name="tanggal_penanaman">
 
       <label for="jenis">Jenis Tanaman</label>
-      <select id="jenis" name="jenis">
+      <select id="jenis" name="pangan_id">
         <option value="1">Padi</option>
         <option value="2">Jagung</option>
         <option value="3">Kedelai</option>
       </select>
 
       <label for="luas">Luas Lahan</label>
-      <input type="text" id="luas" name="luas">
+      <input type="text" id="luas" name="luas_penanaman">
 
       <label for="panen">Tanggal Panen</label>
-      <input type="date" id="panen" name="panen">
+      <input type="date" id="panen" name="tanggal_panen">
 
       <label for="hasil">Hasil</label>
-      <input type="text" id="hasil" name="hasil">
+      <input type="text" id="hasil" name="hasil_panen">
 
       <button type="button" class="btn_simpan" id="simpan">Simpan Data</button> <!-- Ubah type menjadi "button" agar tidak langsung mengirimkan formulir -->
     </form>
@@ -278,7 +221,7 @@
   </div>
 
   <!-- Java Script -->
-  <!-- <script src="JS/prosesData.js"></script> -->
+  <script src="JS/output_data.js"></script>
   <script src="JS/proses_inputData.js"></script>
   <script src="JS/script.js"></script>
 </body>

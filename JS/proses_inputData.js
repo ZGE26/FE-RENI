@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("simpan").addEventListener("click", function() {
         var formData = new FormData(document.getElementById("form_rekap"));
+
+        formData.append("jumlah", 1);
   
         // Lakukan fetch ke URL dengan metode POST
         fetch("http://localhost:8080/panen", {
